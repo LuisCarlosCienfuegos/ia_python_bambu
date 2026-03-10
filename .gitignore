@@ -1,0 +1,15 @@
+# Virtual environments
+.venv/
+venv/
+Nueva_app/venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Editor settings
+.vscode/
+
+# OS files
+Thumbs.db
+Desktop.ini
