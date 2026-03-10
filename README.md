@@ -76,6 +76,17 @@ cd C:\dockerImagenes\ia_python_bambu
 .\Nueva_app\venv\Scripts\python.exe -m streamlit run .\Nueva_app\algo.py
 ```
 
+`algo.py` es una app sencilla en Streamlit que funciona como una calculadora: recibe un número y muestra el 16% de ese valor.
+
+## Deploy de `algo.py`
+
+El despliegue se hará únicamente para `Nueva_app/algo.py` usando Streamlit Cloud:
+
+`https://share.streamlit.io/deploy`
+
+Nota:
+Este deploy aplica solo a la app tipo calculadora hecha en Streamlit. No aplica a `predict.py`.
+
 ## Estructura
 
 ```text
