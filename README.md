@@ -35,6 +35,37 @@ python .\predict.py
 Nota:
 `predict.py` todavía usa rutas de Google Colab como `/content/...`. Antes de correrlo en local, conviene ajustar esas rutas para que apunten a archivos dentro de esta carpeta.
 
+## Solución de errores para `predict.py`
+
+Si `predict.py` no se ejecuta correctamente, reconstruye el entorno virtual con estos comandos:
+
+```powershell
+# 0) Ir al proyecto
+cd C:\dockerImagenes\ia_python_bambu
+
+# 1) Salir del venv actual (si está activo)
+deactivate
+
+# 2) Borrar entorno roto/anterior
+Remove-Item -Recurse -Force .\.venv
+
+# 3) Crear venv con Python 3.10
+py -3.10 -m venv .venv
+
+# 4) Activar venv
+.\.venv\Scripts\Activate.ps1
+
+# 5) Confirmar versión correcta
+python --version
+python -m pip --version
+
+# 6) Actualizar pip/setuptools/wheel
+python -m pip install --upgrade pip setuptools wheel
+
+# 7) Instalar paquetes
+python -m pip install tensorflow pillow matplotlib numpy
+```
+
 ## Ejecutar `Nueva_app/algo.py`
 
 Usando el entorno virtual dentro de `Nueva_app`:
