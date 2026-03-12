@@ -101,3 +101,13 @@ bambu_ia/
 ## Git
 
 Repositorio inicializado con rama principal `main`.
+
+
+## Proyecto de Análisis de Sentimientos
+
+```powershell
+cd analisis_sentimientos
+python -m venv venv #crear el entorno
+venv\Scripts\activate #activar ele entorno
+pip install gradio joblib scikit-learn pandas nltk imbalanced-learn #instralar librerias
+```
