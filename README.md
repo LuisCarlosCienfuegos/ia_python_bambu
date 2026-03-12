@@ -111,3 +111,24 @@ python -m venv venv #crear el entorno
 venv\Scripts\activate #activar ele entorno
 pip install gradio joblib scikit-learn pandas nltk imbalanced-learn #instralar librerias
 ```
+
+## Error entre entornos
+
+`powershell
+cd c:\dockerImagenes\ia_python_bambu\analisis_sentimientos
+
+# borrar el entorno anterior solo si ya existe y no te sirve
+Remove-Item -Recurse -Force .\venv
+
+# crear entorno nuevo
+python -m venv venv
+
+# activar entorno
+.\venv\Scripts\Activate.ps1
+
+# actualizar pip
+python -m pip install --upgrade pip
+
+# instalar dependencias
+pip install gradio joblib scikit-learn pandas nltk imbalanced-learn
+`
